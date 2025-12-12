@@ -20,11 +20,19 @@ function startPixelChaos() {
 
   const sprites = [];
 
-  const images = [
-    "https://i.imgur.com/0VjN9.png",
-    "https://i.imgur.com/zrQ7Z.png",
-    "https://i.imgur.com/Y8a5J.png"
-  ];
+const images = [
+  "images/cat1.png",
+  "images/cat2.png",
+  "images/cat3.png",
+  "images/cat4.png",
+  "images/cat5.png",
+  "images/rat1.png",
+  "images/rat2.png",
+  "images/rat3.png",
+  "images/glitch1.png",
+  "images/glitch2.png",
+  "images/glitch3.png"
+];
 
   const loaded = [];
   let loadCount = 0;
