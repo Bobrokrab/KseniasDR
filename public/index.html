@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ксюша, с Днём Рождения!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ксюша — сюр с крыской</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="loading">
-    <div class="loader-text">LOADING...</div>
-    <div class="loader-bar"><div class="loader-fill"></div></div>
-  </div>
+  <canvas id="pixel-bg"></canvas>
 
-  <div id="main" class="hidden">
-    <canvas id="pixel-bg"></canvas>
+  <div id="content">
+    <h1>Ксюша, с Днём Рождения!</h1>
+    <p class="subtitle">Пусть будет хаос, магия и много котиков. Поймай крыску — и выпадет подарочек!</p>
 
-    <div id="content">
-      <h1>Ксюша, с Днём Рождения!</h1>
-      <p>Пусть твой год будет как этот сайт — немного хаос, немного магия, и много котиков, которые всегда на твоей стороне.<br>Оставайся такой же тёплой, смешной и яркой. Ты — топ ❤️</p>
+    <div id="game">
+      <div id="hud">Поймай крыску! <span id="score">0</span> 🎁</div>
+
+      <!-- убегающая крыска (использует существующие файлы images/rat1.png и т.д.) -->
+      <img id="rat" src="images/rat1.png" alt="крыска" draggable="false" />
+
+      <!-- подарок (создаётся динамически, но стилизован) -->
+      <div id="gift-template" class="hidden">🎁</div>
     </div>
   </div>
 
